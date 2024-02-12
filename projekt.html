@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Organizer</h1>
+        <input type="text" id="taskInput" placeholder="Dodaj Task">
+        <select id="taskType">
+            <option value="productivity">Produktywnośc</option>
+            <option value="rest">Odpoczynek</option>
+            <option value="other">Inne</option>
+        </select>
+        <input type="datetime-local" id="taskDateTime">
+        <button onclick="addTask()">Zatwierdż</button>
+        <ul id="taskList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
